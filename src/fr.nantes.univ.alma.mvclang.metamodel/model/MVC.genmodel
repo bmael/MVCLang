@@ -11,22 +11,22 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//UIApplication/models"/>
     </genClasses>
     <genClasses ecoreClass="MVC.ecore#//View">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//View/actions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MVC.ecore#//View/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//View/actions"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MVC.ecore#//View/model"/>
     </genClasses>
-    <genClasses ecoreClass="MVC.ecore#//NamedElement">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MVC.ecore#//NamedElement/name"/>
+    <genClasses ecoreClass="MVC.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//Model/ownedElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//Model/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="MVC.ecore#//ModelProperty">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference MVC.ecore#//ModelProperty/model"/>
     </genClasses>
     <genClasses ecoreClass="MVC.ecore#//Action">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference MVC.ecore#//Action/nextPage"/>
     </genClasses>
-    <genClasses ecoreClass="MVC.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//Model/properties"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference MVC.ecore#//Model/ownedElements"/>
-    </genClasses>
-    <genClasses ecoreClass="MVC.ecore#//ModelProperty">
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference MVC.ecore#//ModelProperty/model"/>
+    <genClasses ecoreClass="MVC.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute MVC.ecore#//NamedElement/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
