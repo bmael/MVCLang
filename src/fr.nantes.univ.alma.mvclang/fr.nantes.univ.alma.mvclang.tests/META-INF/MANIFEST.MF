@@ -5,7 +5,7 @@ Bundle-Vendor: My Company
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: fr.nantes.univ.alma.mvclang.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
-Require-Bundle: fr.nantes.univ.alma.mvclang,
+Require-Bundle: fr.nantes.univ.alma.mvclproject,
  fr.nantes.univ.alma.mvclang.ui,
  org.eclipse.core.runtime,
  org.eclipse.xtext.junit4,
